@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.input-group {
+  display: flex;
+  gap: 20px;
+}
+
+#input-tarefa {
+  padding: 5px;
+  font-weight: bold;
+  border: 2px solid black;
+  transition-duration: 100ms;
+}
+
+#input-tarefa:focus {
+  transform: scale(1.05);
+}
+
+#btn-tarefa {
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  border: 2px solid black;
+  transition-duration: 100ms;
+  background-color: var(--primary-color);
+}
+
+#btn-tarefa:active {
+  transform: scale(0.95);
+}
+
+#tarefas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+#tarefas li {
+  display: flex;
+  gap: 10px;
+  font-weight: bold;
+}
+
+#tarefas li button {
+  color: white;
+  cursor: pointer;
+  border: 2px solid black;
+  transition-duration: 100ms;
+  background-color: var(--primary-color);
+}
+
+#tarefas li button:active {
+  transform: scale(0.95);
+}
