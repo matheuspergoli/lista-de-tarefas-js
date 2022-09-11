@@ -11,7 +11,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0px 20px;
   padding: 0;
   background: var(--primary-color);
   font-family: 'Open sans', sans-serif;
@@ -69,6 +69,7 @@ body {
   display: flex;
   gap: 10px;
   font-weight: bold;
+  margin-left: -40px;
 }
 
 #tarefas li button {
