@@ -7,6 +7,11 @@ btnTarefa.addEventListener('click', function() {
     criarTarefa(inputTarefa.value)
 })
 
+inputTarefa.addEventListener('keydown', function() {
+    if (event.keyCode != 13 || !inputTarefa.value) return
+    criarTarefa(inputTarefa.value)
+})
+
 function criarTarefa(textoInput) {
     const li = criarLi()
     li.innerText = textoInput
